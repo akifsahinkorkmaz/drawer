@@ -19,7 +19,7 @@ function DisplayConnect(props: DisplayConnect) {
       </div>
       <div className='text-xl md:text-2xl text-left mt-4 mb-12 p-4 rounded bg-gray-600'>
         <h2 className='text-2xl md:text-3xl text-center text-amber-500'> How To Connect? </h2>
-        <p className='m-4'><strong className='text-amber-500'> 1.</strong> Visit <a className='text-amber-500' href="localhost:3000">localhost:3000</a> on a device that has touch-screen capabilities</p>
+        <p className='m-4'><strong className='text-amber-500'> 1.</strong> Visit <a className='text-amber-500' href="https://akifsahinkorkmaz.github.io/drawer/">https://akifsahinkorkmaz.github.io/drawer/</a> on a device that is preferably desktop</p>
         <p className='m-4'><strong className='text-amber-500'> 2.</strong> Select DRAWER on that device </p>
         <p className='m-4'><strong className='text-amber-500'> 3.</strong> Enter connection id from DISPLAY device to DRAWER device </p>
         <p className='m-4'><strong className='text-amber-500'> 4.</strong> Start Drawing </p>
