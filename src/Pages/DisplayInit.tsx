@@ -61,6 +61,9 @@ function DisplayInit() {
     // Set RTC Listener
     if (Conn) {
       Conn.on("data", (data: any) => {
+
+        console.log(data);
+
         // write
         var parsed = data.toString();
         parsed = parsed.split("/")

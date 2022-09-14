@@ -20,6 +20,25 @@ function DrawInit() {
 
 
   useEffect(() => {
+    function TouchPos(e: any) {
+      e.preventDefault();
+
+      var dw: number = 300;
+      var dh: number = 200;
+      var w = document.documentElement.clientWidth;
+      var h = document.documentElement.clientHeight;
+
+      e.changedTouches.forEach((tch: any) => {
+        var x = tch.clientX; 
+        var y = tch.clientY;
+
+        x = Math.ceil((x * dw) / w);
+        y = Math.ceil((y * dh) / h);
+
+        ConHandle.con?.send(x + "/" + y + "/" + "#f59e0b")
+      })
+    }
+
     function MousePos(e: any) {
       e.preventDefault();
 
@@ -38,13 +57,15 @@ function DrawInit() {
 
     let drawer = table.current;
 
-    drawer?.addEventListener("pointerdown", function(e){
-      this.addEventListener("pointermove", MousePos);
+    drawer?.addEventListener("mousedown", function(e){
+      this.addEventListener("mousemove", MousePos);
     });
-    
-    drawer?.addEventListener("pointerup", function(e){
-      this.removeEventListener("pointermove", MousePos);
+    drawer?.addEventListener("mouseup", function(e){
+      this.removeEventListener("mousemove", MousePos);
     });
+
+    // or 
+    drawer?.addEventListener("touchmove", TouchPos);
 
   }, [Connected]);
 
@@ -59,7 +80,7 @@ function DrawInit() {
   }else {
     return (
       <div className='w-screen h-screen bg-gray-900'>
-        <div className='w-screen h-screen' ref={table}></div>  
+        <div className='w-screen h-screen cursor-cell' ref={table}></div>  
       </div>
     )
   }

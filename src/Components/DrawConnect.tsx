@@ -70,9 +70,9 @@ function DrawConnect(props:DrawConnectProps) {
         </div>
         <div className='text-xl md:text-2xl text-left mt-4 mb-12 p-4 rounded bg-gray-600'>
           <h2 className='text-2xl md:text-3xl text-center text-amber-500'> How To Connect? </h2>
-          <p className='m-4'><strong className='text-amber-500'> 1.</strong> Visit <a className='text-amber-500' href="https://akifsahinkorkmaz.github.io/drawer/">https://akifsahinkorkmaz.github.io/drawer/</a> on a device that has a nice screen</p>
+          <p className='m-4'><strong className='text-amber-500'> 1.</strong> Visit <a className='text-amber-500' href="https://akifsahinkorkmaz.github.io/painter/">https://akifsahinkorkmaz.github.io/painter/</a> on a device that has a nice screen</p>
           <p className='m-4'><strong className='text-amber-500'> 2.</strong> Select DISPLAY on that device </p>
-          <p className='m-4'><strong className='text-amber-500'> 3.</strong> Enter connection id from DISPLAY device to DRAWER device </p>
+          <p className='m-4'><strong className='text-amber-500'> 3.</strong> Enter connection id from DISPLAY device to INPUT device </p>
           <p className='m-4'><strong className='text-amber-500'> 4.</strong> Start Drawing </p>
         </div>
       </div>

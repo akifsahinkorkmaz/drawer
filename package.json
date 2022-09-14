@@ -2,7 +2,7 @@
   "name": "signature",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akifsahinkorkmaz.github.io/drawer",
+  "homepage": "https://akifsahinkorkmaz.github.io/painter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
